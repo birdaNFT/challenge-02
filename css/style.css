@@ -36,6 +36,9 @@ p {
 a {
   text-decoration: none;
 }
+span {
+  color: var(--secondary-color);
+}
 
 header {
   background: rgba(18, 18, 18, 0.8);
@@ -46,6 +49,7 @@ header {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
+  z-index: 100;
 }
 header div {
   margin: 0 auto;
@@ -56,9 +60,6 @@ header div {
   align-items: center;
   padding-left: 20px;
   border-left: 1px solid var(--border-color);
-}
-header div h1 span {
-  color: var(--secondary-color)
 }
 header div nav {
   height: 100%;
@@ -91,6 +92,61 @@ header div nav ul li a:hover {
   background: #242424;
 }
 
+.hero-banner {
+  position: relative;
+}
+.hero-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.hero-images > div {
+  height: 600px;
+  width: 100%;
+}
+.hero-grid-image-one {
+  background: url(../images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 60%;
+}
+.hero-grid-image-two {
+  display: flex;
+  justify-content: flex-end;
+}
+.hero-grid-image-two > div {
+  background: url(../images/hero-image-small.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 60%;
+  width: 40%;
+}
+
+.hero-text-container {
+  position: absolute;
+  inset: 0;
+  margin: 0 auto;
+}
+.hero-text-container > div {
+  margin: 0 auto;
+  max-width: 72rem;
+  border-right: 1px solid var(--border-color);
+  height: 100%;
+}
+.hero-text {
+  margin: 0 auto;
+  max-width: 28rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 3.0rem;
+}
+.hero-text > h2 {
+  line-height: 5.5rem;
+}
+
+
 @media (max-width: 768px) {
   header div h1 {
     font-size: 1.2rem;
@@ -98,5 +154,19 @@ header div nav ul li a:hover {
   header div nav ul li a {
     font-size: 0.6rem;
     padding: 0 15px;
+  }
+  .hero-images {
+    grid-template-columns: 1fr;
+  }
+  .hero-images > div {
+    height: 300px;
+  }
+  .hero-grid-image-two {
+    visibility: hidden;
+  }
+  .hero-text > h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding: 10px;
   }
 }

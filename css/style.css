@@ -213,7 +213,7 @@ header div nav ul li a:hover {
 }
 .work-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
 .work-grid-item {
@@ -227,6 +227,10 @@ header div nav ul li a:hover {
 }
 .work-grid-item:hover {
   filter: brightness(1.1);
+}
+.grid-item-one {
+  grid-column: span 3;
+  height: 350px;
 }
 .work-grid-item-image {
   min-width: 100%;
@@ -300,6 +304,12 @@ input, textarea {
   padding: 20px 0;
 }
 
+footer {
+  text-align: center;
+  padding: 20px 0;
+  opacity: 50%;
+}
+
 
 @media (max-width: 1080px) {
   .about-container {
@@ -344,7 +354,9 @@ input, textarea {
   .work-grid {
     grid-template-columns: 1fr;
   }
-
+  .grid-item-one {
+    grid-column: span 1;
+  }
   
   .contact-grid {
     grid-template-columns: 1fr;

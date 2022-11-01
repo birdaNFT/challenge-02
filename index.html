@@ -11,16 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
     <!-- main logo / nav -->
     <header>
-      <div>
-        <a href="#">
-          <h1><span>SAM</span> XANDER</h1>
-        </a>
+      <div class="header-container">
+        <h1><span>SAM</span> XANDER</h1>
         <nav>
           <ul>
             <li>
@@ -37,37 +35,36 @@
       </div>
     </header>
 
-    <!-- hero banner -->
-    <section class="hero-banner">
-      <div class="hero-images">
-        <div class="hero-grid-image-one"></div>
-        <div class="hero-grid-image-two">
-          <div></div>
-        </div>
-      </div>
-      <div class="hero-text-container">
-        <div>
-          <div class="hero-text">
-            <h2><span>I'M SAM, FRONT-END</span> DEVELOPER</h2>
+    <main>
+      <!-- hero banner -->
+      <section class="hero-section">
+        <div class="hero-grid-container">
+          <div class="hero-grid-one"></div>
+          <div class="hero-grid-two">
+            <div></div>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="hero-text-container">
+          <div class="hero-text">
+            <h2><span>I'M SAM,</span></h2>
+            <h2>FRONT-END DEVELOPER</h2>
+          </div>
+        </div>
+      </section>
 
-    <main>
       <!-- about me -->
       <section class="about-section" id="about">
         <div class="about-container">
-          <div class="about-grid-image">
+          <div class="about-image-container">
             <img
-              src="./images/about-image.jpg"
+              src="assets/images/about-image.jpg"
               alt="Profile photograph with sea background."
               width="200px"
               class="about-image"
             />
           </div>
-          <div class="about-grid-text">
-            <h4>I'M UK BASED</h4>
+          <div class="about-text-container">
+            <h4>I'M BASED IN THE UK</h4>
             <h3>ABOUT ME</h3>
             <p>
               🚀 I'm a young, passionate front-end developer. I'm determined to
@@ -93,10 +90,10 @@
             <a
               href="#"
               alt="Cypher dashboard screenshot"
-              class="work-grid-item grid-item-one"
+              class="work-grid-item"
             >
               <img
-                src="./images/cypher-dashboard.png"
+                src="assets/images/cypher-dashboard.png"
                 alt="#"
                 class="work-grid-item-image"
               />
@@ -109,49 +106,49 @@
             <a
               href="#"
               alt="Cypher Seals website screenshot"
-              class="work-grid-item grid-item-two"
+              class="work-grid-item"
             >
               <img
-                src="./images/cypher-seals-website.png"
+                src="assets/images/cypher-seals-website.png"
                 alt="#"
                 class="work-grid-item-image"
               />
               <div class="work-grid-item-overlay"></div>
               <div class="work-grid-item-text">
                 <h5>CYPHER SEALS</h5>
-                <h6>HTML, Tailwind CSS, React, Next.js</h6>
+                <h6>Tailwind CSS, React, Next.js</h6>
               </div>
             </a>
             <a
               href="#"
               alt="Rachel Hancock website screenshot"
-              class="work-grid-item grid-item-three"
+              class="work-grid-item"
             >
               <img
-                src="./images/rachel-website.png"
+                src="assets/images/rachel-website.png"
                 alt="#"
                 class="work-grid-item-image"
               />
               <div class="work-grid-item-overlay"></div>
               <div class="work-grid-item-text">
                 <h5>RACHEL HANCOCK</h5>
-                <h6>HTML, Tailwind CSS, React, Next.js</h6>
+                <h6>Tailwind CSS, React, Next.js</h6>
               </div>
             </a>
             <a
               href="#"
               alt="SolSeals website screenshot"
-              class="work-grid-item grid-item-four"
+              class="work-grid-item"
             >
               <img
-                src="./images/solseals-website.png"
+                src="assets/images/solseals-website.png"
                 alt="#"
                 class="work-grid-item-image"
               />
               <div class="work-grid-item-overlay"></div>
               <div class="work-grid-item-text">
                 <h5>SOLSEALS</h5>
-                <h6>HTML, SCSS, Bootstrap, JavaScript</h6>
+                <h6>SASS, Bootstrap</h6>
               </div>
             </a>
           </div>
@@ -196,6 +193,7 @@
         </div>
       </section>
     </main>
+
     <footer>
       <p>&copy; 2022 SAM XANDER</p>
     </footer>
